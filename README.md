@@ -514,8 +514,6 @@ The binding score is calculated based on **COX-2 structural requirements** (PDB:
 
 The **DrugQuest Dashboard** is a comprehensive 7-tab analysis suite for COX-2 binding prediction results.
 
-![DrugQuest Dashboard - Rankings](assets/drugquest_rankings.png)
-
 #### Dashboard Tabs
 
 **1. Rankings Tab**
@@ -569,8 +567,6 @@ The **DrugQuest Dashboard** is a comprehensive 7-tab analysis suite for COX-2 bi
 ### GAT-Specific Analysis Dashboard
 
 The **GAT-Specific Analysis Dashboard** provides deep insights into the Graph Attention Network's learning.
-
-![GAT Dashboard - Network](assets/gat_dashboard_network.png)
 
 #### Dashboard Tabs
 
@@ -715,44 +711,6 @@ jupyter notebook gat_multitask_binding.ipynb
 
 ---
 
-## 📁 Project Structure
-
-```
-drug-discovery-suite/
-├── 📓 drug_screening-5.ipynb      # Screening pipeline notebook
-├── 📓 gat_multitask_binding.ipynb # GAT pipeline notebook
-├── 📁 src/
-│   ├── 📁 core/
-│   │   └── molecule.py            # DrugMolecule class
-│   ├── 📁 features/
-│   │   └── pharmacophore.py       # Feature extraction
-│   ├── 📁 similarity/
-│   │   └── consensus.py           # Similarity calculations
-│   ├── 📁 analysis/
-│   │   ├── atom_importance.py     # GAT attention analysis
-│   │   └── dft_data_collector.py  # DFT data processing
-│   ├── 📁 scoring/
-│   │   └── binding_score.py       # COX-2 binding scorer
-│   ├── 📁 interactive/
-│   │   ├── dashboard.py           # Drug Screener Dashboard
-│   │   ├── property_filter.py     # Interactive filters
-│   │   └── pharmacophore_viewer.py
-│   └── 📁 dashboard/
-│       ├── drugquest_dashboard.py # DrugQuest Dashboard
-│       └── gat_dashboard.py       # GAT Analysis Dashboard
-├── 📁 datasets/
-│   ├── final-185_dft_analysis_results.csv
-│   ├── dft_full_analysis.json
-│   └── 4PH9_binding_site_pharmacophore.json
-├── 📁 optimized_molecules/        # DFT-optimized structures
-├── 📁 assets/                     # Images for README
-├── 📁 docs/                       # Additional documentation
-├── 📄 requirements.txt
-├── 📄 README.md
-└── 📄 LICENSE
-```
-
----
 
 ## 🤝 Contributing
 
