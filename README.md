@@ -183,8 +183,6 @@ Where $d_i$ are desirability functions for MW, LogP, HBA, HBD, TPSA, RotBonds, R
 
 The **Drug Screener Dashboard** is a comprehensive 8-tab interactive tool for exploring screening results with real-time molecular visualization.
 
-![Drug Screener Dashboard - Radar](assets/drug_screener_radar.png)
-
 #### Dashboard Tabs
 
 | Tab | Function | Key Features |
