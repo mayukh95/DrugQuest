@@ -9,10 +9,9 @@
 > **A comprehensive computational drug discovery platform combining pharmacophore-based virtual screening with Graph Attention Networks**
 
 This repository showcases an end-to-end drug discovery pipeline that integrates:
-- 🔬 **Multi-metric molecular similarity** (Morgan, 2D/3D Pharmacophore)
-- 🧠 **Deep Learning** with Graph Attention Networks (GAT)
-- ⚛️ **Quantum Chemistry** features from DFT calculations
-- 📊 **Interactive dashboards** for real-time analysis
+- **Multi-metric molecular similarity** (Morgan, 2D/3D Pharmacophore)
+- **Deep Learning** with Graph Attention Networks (GAT)
+- **Interactive dashboards** for real-time analysis
 
 ---
 
@@ -39,7 +38,7 @@ This repository showcases an end-to-end drug discovery pipeline that integrates:
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project implements a **two-stage computational drug discovery workflow** targeting **COX-2 inhibitors** (anti-inflammatory drugs):
 
@@ -69,15 +68,13 @@ This project implements a **two-stage computational drug discovery workflow** ta
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
 | **🔍 Multi-Metric Screening** | Combines Morgan fingerprints, 2D/3D pharmacophore similarity |
-| **⚛️ DFT Integration** | Quantum chemical features (Fukui indices, ESP, charges) |
 | **🧠 Graph Attention Networks** | State-of-the-art GNN with interpretable attention |
 | **📊 Interactive Dashboards** | 4 comprehensive dashboards for analysis |
-| **🎯 COX-2 Specific** | Pharmacophore requirements from PDB structure 4PH9 |
 | **📈 Consensus Scoring** | Weighted multi-metric candidate ranking |
 
 ---
@@ -114,11 +111,11 @@ This project implements a **two-stage computational drug discovery workflow** ta
 
 ---
 
-## 🔬 Drug Screening Pipeline
+## Drug Screening Pipeline
 
 The screening pipeline (`drug_screening-5.ipynb`) implements a comprehensive virtual screening workflow that filters and ranks drug candidates using multiple orthogonal metrics.
 
-### 📊 Interactive Property Filter
+### Interactive Property Filter
 
 The **Interactive Property Filter** is a powerful widget-based tool for real-time molecule filtering based on drug-likeness criteria.
 
@@ -241,7 +238,7 @@ The **Drug Screener Dashboard** is a comprehensive 8-tab interactive tool for ex
 
 ---
 
-### 📐 Similarity Metrics Explained
+### Similarity Metrics Explained
 
 The pipeline uses **three complementary similarity metrics** to capture different aspects of molecular similarity:
 
@@ -463,22 +460,22 @@ The binding score is calculated based on **COX-2 structural requirements** (PDB:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    COX-2 BINDING SITE PHARMACOPHORE                         │
+│                    BINDING SITE PHARMACOPHORE                         │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │   ┌─────────────────────────────────────────────────────────────────────┐  │
 │   │                     BINDING POCKET                                   │  │
 │   │                                                                      │  │
-│   │         Arg120 ─────┐                                               │  │
-│   │         (salt bridge)│     ┌───── Tyr385                            │  │
-│   │                      │     │      (π-stacking)                      │  │
+│   │                 ─────┐                                               │  │
+│   │         (salt bridge)│     ┌─────                                    │  │
+│   │                      │     │    (π-stacking)                      │  │
 │   │                      ▼     ▼                                        │  │
 │   │                   ╔═══════════╗                                     │  │
-│   │      Tyr355 ─────▶║  LIGAND   ║◀───── Trp387                       │  │
+│   │             ─────▶║  LIGAND   ║◀─────                               │  │
 │   │      (H-bond)     ╚═══════════╝       (π-stacking)                  │  │
 │   │                      ▲     ▲                                        │  │
 │   │                      │     │                                        │  │
-│   │         Ser530 ─────┘     └───── Hydrophobic                        │  │
+│   │                 ─────┘     └───── Hydrophobic                        │  │
 │   │         (H-bond)                  Pocket                            │  │
 │   │                                                                      │  │
 │   └─────────────────────────────────────────────────────────────────────┘  │
@@ -487,8 +484,8 @@ The binding score is calculated based on **COX-2 structural requirements** (PDB:
 │   ┌─────────────────────┬─────────────────┬─────────────────────────────┐  │
 │   │ Feature             │ Optimal Range   │ Biological Rationale        │  │
 │   ├─────────────────────┼─────────────────┼─────────────────────────────┤  │
-│   │ Acidic Group        │ Present         │ Salt bridge with Arg120     │  │
-│   │ H-Bond Acceptors    │ 1-6             │ Tyr355, Ser530 interactions │  │
+│   │ Acidic Group        │ Present         │ Salt bridge with            │  │
+│   │ H-Bond Acceptors    │ 1-6             │ interactions                │  │
 │   │ H-Bond Donors       │ 0-4             │ Hydrogen bond network       │  │
 │   │ LogP                │ 1.0-5.5         │ Hydrophobic pocket fit      │  │
 │   │ Aromatic Rings      │ 1-4             │ π-stacking with Tyr385      │  │
@@ -607,50 +604,6 @@ The **GAT-Specific Analysis Dashboard** provides deep insights into the Graph At
 
 ## 📦 Installation
 
-### Prerequisites
-
-- Python 3.9+
-- CUDA (optional, for GPU acceleration)
-
-### Quick Start
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/drug-discovery-suite.git
-cd drug-discovery-suite
-
-# Create conda environment
-conda create -n drugdiscovery python=3.9
-conda activate drugdiscovery
-
-# Install PyTorch (CPU)
-pip install torch torchvision torchaudio
-
-# Or for CUDA 11.8
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
-# Install PyTorch Geometric
-pip install torch_geometric
-
-# Install other dependencies
-pip install rdkit pandas numpy matplotlib seaborn py3Dmol ipywidgets plotly scikit-learn
-
-# Install Jupyter
-pip install jupyter jupyterlab
-```
-
-### Verify Installation
-
-```python
-import torch
-import torch_geometric
-from rdkit import Chem
-import py3Dmol
-
-print(f"PyTorch: {torch.__version__}")
-print(f"PyG: {torch_geometric.__version__}")
-print(f"CUDA: {torch.cuda.is_available()}")
-```
 
 ---
 
