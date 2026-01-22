@@ -72,10 +72,10 @@ This project implements a **two-stage computational drug discovery workflow** ta
 
 | Feature | Description |
 |---------|-------------|
-| ** Multi-Metric Screening** | Combines Morgan fingerprints, 2D/3D pharmacophore similarity |
-| ** Graph Attention Networks** | State-of-the-art GNN with interpretable attention |
-| ** Interactive Dashboards** | 4 comprehensive dashboards for analysis |
-| ** Consensus Scoring** | Weighted multi-metric candidate ranking |
+| **Multi-Metric Screening** | Combines Morgan fingerprints, 2D/3D pharmacophore similarity |
+| **Graph Attention Networks** | State-of-the-art GNN with interpretable attention |
+| **Interactive Dashboards** | 4 comprehensive dashboards for analysis |
+| **Consensus Scoring** | Weighted multi-metric candidate ranking |
 
 ---
 
