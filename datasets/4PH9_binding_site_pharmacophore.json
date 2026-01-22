@@ -1,0 +1,356 @@
+{
+  "target": "4PH9",
+  "chain": "A",
+  "ligand": "IBP",
+  "site_residues": [
+    "VAL117",
+    "ARG121",
+    "VAL350",
+    "LEU353",
+    "SER354",
+    "TYR356",
+    "LEU360",
+    "PHE382",
+    "LEU385",
+    "TYR386",
+    "TRP388",
+    "PHE519",
+    "MET523",
+    "VAL524",
+    "GLY527",
+    "ALA528",
+    "SER531",
+    "LEU532"
+  ],
+  "site_center": [
+    13.008133888244629,
+    23.487201690673828,
+    25.255598068237305
+  ],
+  "site_classification": {
+    "donors": [
+      "ARG121",
+      "SER354",
+      "TYR356",
+      "TYR386",
+      "TRP388",
+      "SER531"
+    ],
+    "acceptors": [
+      "SER354",
+      "TYR356",
+      "TYR386",
+      "SER531"
+    ],
+    "hydrophobic": [
+      "VAL117",
+      "VAL350",
+      "LEU353",
+      "LEU360",
+      "PHE382",
+      "LEU385",
+      "TRP388",
+      "PHE519",
+      "MET523",
+      "VAL524",
+      "ALA528",
+      "LEU532"
+    ],
+    "aromatic": [
+      "TYR356",
+      "PHE382",
+      "TYR386",
+      "TRP388",
+      "PHE519"
+    ],
+    "positive": [
+      "ARG121"
+    ],
+    "negative": []
+  },
+  "required_ligand_features": {
+    "Acceptor": 6,
+    "Donor": 4,
+    "Hydrophobe": 12,
+    "Aromatic": 5,
+    "NegIonizable": 1,
+    "PosIonizable": 0
+  },
+  "pharmacophore_features_3d": [
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "ARG121",
+      "coords": {
+        "x": 13.133,
+        "y": 17.39,
+        "z": 26.157
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "SER354",
+      "coords": {
+        "x": 7.269,
+        "y": 25.291,
+        "z": 22.254
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "TYR356",
+      "coords": {
+        "x": 9.72,
+        "y": 20.132,
+        "z": 22.747
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "TYR386",
+      "coords": {
+        "x": 18.05,
+        "y": 30.009,
+        "z": 25.644
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "TRP388",
+      "coords": {
+        "x": 21.445,
+        "y": 27.778,
+        "z": 20.654
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "donors",
+      "ligand_needs": "Acceptor",
+      "residue": "SER531",
+      "coords": {
+        "x": 17.248,
+        "y": 25.839,
+        "z": 28.107
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "acceptors",
+      "ligand_needs": "Donor",
+      "residue": "SER354",
+      "coords": {
+        "x": 7.269,
+        "y": 25.291,
+        "z": 22.254
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "acceptors",
+      "ligand_needs": "Donor",
+      "residue": "TYR356",
+      "coords": {
+        "x": 9.72,
+        "y": 20.132,
+        "z": 22.747
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "acceptors",
+      "ligand_needs": "Donor",
+      "residue": "TYR386",
+      "coords": {
+        "x": 18.05,
+        "y": 30.009,
+        "z": 25.644
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "acceptors",
+      "ligand_needs": "Donor",
+      "residue": "SER531",
+      "coords": {
+        "x": 17.248,
+        "y": 25.839,
+        "z": 28.107
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "VAL117",
+      "coords": {
+        "x": 7.36,
+        "y": 19.291,
+        "z": 30.187
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "VAL350",
+      "coords": {
+        "x": 10.811,
+        "y": 28.027,
+        "z": 26.717
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "LEU353",
+      "coords": {
+        "x": 13.515,
+        "y": 29.172,
+        "z": 21.241
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "LEU360",
+      "coords": {
+        "x": 5.697,
+        "y": 25.388,
+        "z": 27.105
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "LEU385",
+      "coords": {
+        "x": 23.499,
+        "y": 24.002,
+        "z": 24.402
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "MET523",
+      "coords": {
+        "x": 21.339,
+        "y": 24.262,
+        "z": 20.42
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "VAL524",
+      "coords": {
+        "x": 15.287,
+        "y": 20.339,
+        "z": 21.084
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "ALA528",
+      "coords": {
+        "x": 14.643,
+        "y": 20.874,
+        "z": 26.606
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "hydrophobic",
+      "ligand_needs": "Hydrophobe",
+      "residue": "LEU532",
+      "coords": {
+        "x": 12.616,
+        "y": 23.037,
+        "z": 30.761
+      },
+      "tolerance": 2.0
+    },
+    {
+      "site_feature": "aromatic",
+      "ligand_needs": "Aromatic",
+      "residue": "TYR356",
+      "coords": {
+        "x": 8.526,
+        "y": 20.767,
+        "z": 22.553
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "aromatic",
+      "ligand_needs": "Aromatic",
+      "residue": "PHE382",
+      "coords": {
+        "x": 20.534,
+        "y": 26.767,
+        "z": 29.234
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "aromatic",
+      "ligand_needs": "Aromatic",
+      "residue": "TYR386",
+      "coords": {
+        "x": 19.386,
+        "y": 29.774,
+        "z": 25.395
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "aromatic",
+      "ligand_needs": "Aromatic",
+      "residue": "TRP388",
+      "coords": {
+        "x": 20.315,
+        "y": 28.43,
+        "z": 21.088
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "aromatic",
+      "ligand_needs": "Aromatic",
+      "residue": "PHE519",
+      "coords": {
+        "x": 17.559,
+        "y": 27.238,
+        "z": 19.059
+      },
+      "tolerance": 1.5
+    },
+    {
+      "site_feature": "positive",
+      "ligand_needs": "NegIonizable",
+      "residue": "ARG121",
+      "coords": {
+        "x": 13.137,
+        "y": 17.398,
+        "z": 26.151
+      },
+      "tolerance": 2.0
+    }
+  ]
+}
