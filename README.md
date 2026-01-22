@@ -33,9 +33,6 @@ This repository showcases an end-to-end drug discovery pipeline that integrates:
   - [GAT-Specific Analysis Dashboard](#gat-specific-analysis-dashboard)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Results](#-results)
-- [Project Structure](#-project-structure)
-
 ---
 
 ## Overview
