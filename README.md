@@ -72,10 +72,10 @@ This project implements a **two-stage computational drug discovery workflow** ta
 
 | Feature | Description |
 |---------|-------------|
-| **🔍 Multi-Metric Screening** | Combines Morgan fingerprints, 2D/3D pharmacophore similarity |
-| **🧠 Graph Attention Networks** | State-of-the-art GNN with interpretable attention |
-| **📊 Interactive Dashboards** | 4 comprehensive dashboards for analysis |
-| **📈 Consensus Scoring** | Weighted multi-metric candidate ranking |
+| ** Multi-Metric Screening** | Combines Morgan fingerprints, 2D/3D pharmacophore similarity |
+| ** Graph Attention Networks** | State-of-the-art GNN with interpretable attention |
+| ** Interactive Dashboards** | 4 comprehensive dashboards for analysis |
+| ** Consensus Scoring** | Weighted multi-metric candidate ranking |
 
 ---
 
@@ -327,7 +327,7 @@ $$\text{Consensus} = w_1 \cdot \text{Morgan} + w_2 \cdot \text{Pharm2D} + w_3 \c
 
 ---
 
-## 🧠 Graph Attention Network for Binding Prediction
+## Graph Attention Network for Binding Prediction
 
 The second pipeline (`examples/GAT_multitask.ipynb`) uses **Graph Attention Networks** to predict binding compatibility with the enzyme.
 
