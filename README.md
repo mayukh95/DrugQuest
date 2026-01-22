@@ -40,14 +40,14 @@ This repository showcases an end-to-end drug discovery pipeline that integrates:
 
 ## Overview
 
-This project implements a **two-stage computational drug discovery workflow** targeting **COX-2 inhibitors** (anti-inflammatory drugs):
+This project implements a **two-stage computational drug discovery workflow** targeting **inhibitors** (anti-inflammatory drugs):
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         DRUG DISCOVERY PIPELINE                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│   STAGE 1: Virtual Screening Pipeline (drug_screening-5.ipynb)             │
+│   STAGE 1: Virtual Screening Pipeline (Drug_screening.ipynb)             │
 │   ─────────────────────────────────────────────────────────────             │
 │   • Drug-likeness filtering (Lipinski, Veber, Lead-like)                   │
 │   • Multi-metric similarity (Morgan, Pharm2D, Pharm3D)                     │
@@ -56,12 +56,12 @@ This project implements a **two-stage computational drug discovery workflow** ta
 │                                                                             │
 │                              ↓                                              │
 │                                                                             │
-│   STAGE 2: Deep Learning Binding Prediction (gat_multitask_binding.ipynb)  │
+│   STAGE 2: Deep Learning Binding Prediction (GAT_multitask.ipynb)  │
 │   ─────────────────────────────────────────────────────────────────────    │
 │   • Graph Attention Network with DFT features                               │
 │   • Multi-task learning for pharmacophore prediction                        │
 │   • Attention-based interpretability                                        │
-│   • COX-2 binding site pharmacophore scoring                               │
+│   • binding site pharmacophore scoring                               │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -113,7 +113,7 @@ This project implements a **two-stage computational drug discovery workflow** ta
 
 ## Drug Screening Pipeline
 
-The screening pipeline (`drug_screening-5.ipynb`) implements a comprehensive virtual screening workflow that filters and ranks drug candidates using multiple orthogonal metrics.
+The screening pipeline (`examples/Drug_screening.ipynb`) implements a comprehensive virtual screening workflow that filters and ranks drug candidates using multiple orthogonal metrics.
 
 ### Interactive Property Filter
 
@@ -329,7 +329,7 @@ $$\text{Consensus} = w_1 \cdot \text{Morgan} + w_2 \cdot \text{Pharm2D} + w_3 \c
 
 ## 🧠 Graph Attention Network for Binding Prediction
 
-The second pipeline (`gat_multitask_binding.ipynb`) uses **Graph Attention Networks** to predict binding compatibility with the COX-2 enzyme.
+The second pipeline (`examples/GAT_multitask.ipynb`) uses **Graph Attention Networks** to predict binding compatibility with the enzyme.
 
 ### GAT Architecture
 
@@ -509,7 +509,7 @@ The binding score is calculated based on **COX-2 structural requirements** (PDB:
 
 ### DrugQuest Dashboard
 
-The **DrugQuest Dashboard** is a comprehensive 7-tab analysis suite for COX-2 binding prediction results.
+The **DrugQuest Dashboard** is a comprehensive 7-tab analysis suite for binding prediction results.
 
 #### Dashboard Tabs
 
@@ -531,7 +531,7 @@ The **DrugQuest Dashboard** is a comprehensive 7-tab analysis suite for COX-2 bi
 **3. Chemistry Tab**
 - Fragment importance analysis
 - Functional group detection
-- COX-2 binding site context
+- binding site context
 - Fragment/functional group counts
 
 ![DrugQuest Chemistry](assets/drugquest_chemistry.png)
@@ -612,7 +612,7 @@ The **GAT-Specific Analysis Dashboard** provides deep insights into the Graph At
 ### Running the Screening Pipeline
 
 ```bash
-jupyter notebook drug_screening-5.ipynb
+jupyter notebook Drug_screening.ipynb
 ```
 
 1. Run all cells sequentially
@@ -623,7 +623,7 @@ jupyter notebook drug_screening-5.ipynb
 ### Running the GAT Pipeline
 
 ```bash
-jupyter notebook gat_multitask_binding.ipynb
+jupyter notebook GAT_multitask.ipynb
 ```
 
 1. Run all cells to train the model
@@ -632,7 +632,37 @@ jupyter notebook gat_multitask_binding.ipynb
 
 
 ---
+## 🛠️ Technologies Used
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/PyTorch_Geometric-2.0+-3C2179?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch Geometric"/>
+  <img src="https://img.shields.io/badge/RDKit-2023+-FF6C37?style=for-the-badge&logo=rdkit&logoColor=white" alt="RDKit"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+</p>
+
+### Core Libraries
+
+- **[PyTorch](https://pytorch.org/)** - Deep learning framework for neural network implementation
+- **[PyTorch Geometric (PyG)](https://pytorch-geometric.readthedocs.io/)** - Graph neural network library featuring GATv2Conv layers
+- **[RDKit](https://www.rdkit.org/)** - Cheminformatics toolkit for molecular property calculations and SMILES parsing
+
+### Quantum Chemistry
+
+- **[PySCF](https://pyscf.org/)** (Data source) - Density Functional Theory (DFT) calculations
+
+### Visualization & Analysis
+
+- **[Matplotlib](https://matplotlib.org/)** - Training progress visualization and loss curves
+- **[IPyWidgets](https://ipywidgets.readthedocs.io/)** - Interactive Jupyter dashboards (see [src/dashboard/](src/dashboard/))
+- **[py3Dmol](https://3dmol.org/)** - 3D molecular structure visualization
+
+### Data Processing
+
+- **[NumPy](https://numpy.org/)** - Numerical computing and array operations
+- **[Pandas](https://pandas.pydata.org/)** - Data manipulation and CSV handling
+- **[scikit-learn](https://scikit-learn.org/)** - Train/test splitting and preprocessing utilities
 
 ## 🤝 Contributing
 
@@ -653,9 +683,39 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact
+## 👤 Author
 
-**Author**: Mayukh Kansari
+**Mayukh Kansari** - *Computational Chemistry*
+
+- GitHub: [@mayukh95](https://github.com/mayukh95/)
+- Email: kansarimayukh@gmail.com
+
 
 ---
 
+## ⭐ Acknowledgments
+
+### Core Libraries & Frameworks
+
+| Project | Contribution | Link |
+|---------|-------------|------|
+| **PyTorch & PyTorch Geometric** | Deep learning framework and graph neural network library that power our GAT architecture | [pytorch.org](https://pytorch.org/) · [pyg.org](https://pytorch-geometric.readthedocs.io/) |
+| **RDKit** | Comprehensive cheminformatics toolkit for molecular processing, fingerprint generation, and descriptor calculation | [rdkit.org](https://www.rdkit.org/) |
+| **PySCF** | High-performance quantum chemistry library for DFT calculations and electronic structure analysis | [pyscf.org](https://pyscf.org/) |
+| **Jupyter Project** | Interactive computing platform that makes this research reproducible and accessible | [jupyter.org](https://jupyter.org/) |
+
+### Visualization & Interactivity
+
+| Project | Contribution | Link |
+|---------|-------------|------|
+| **py3Dmol** | JavaScript-based 3D molecular viewer enabling interactive visualization of structures and pharmacophores | [3dmol.org](https://3dmol.csb.pitt.edu/) |
+| **ipywidgets** | Interactive HTML widgets for Jupyter notebooks, powering our dashboards | [ipywidgets.readthedocs.io](https://ipywidgets.readthedocs.io/) |
+| **Plotly** | Interactive graphing library for attention flow and network visualizations | [plotly.com](https://plotly.com/python/) |
+| **Matplotlib & Seaborn** | Publication-quality static visualizations and statistical graphics | [matplotlib.org](https://matplotlib.org/) · [seaborn.pydata.org](https://seaborn.pydata.org/) |
+
+### Data & Structural Biology
+
+| Resource | Contribution | Link |
+|----------|-------------|------|
+| **RCSB Protein Data Bank** | COX-2 crystal structure (PDB: 4PH9) used for binding site analysis | [rcsb.org](https://www.rcsb.org/) |
+| **ChEMBL Database** | Bioactivity data and molecular structures for drug discovery | [ebi.ac.uk/chembl](https://www.ebi.ac.uk/chembl/) |
