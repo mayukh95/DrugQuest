@@ -454,9 +454,9 @@ Where:
 | **ESP at Nuclei** | Electrostatic potential | H-bonding prediction |
 | **Mayer Bond Order** | Quantum bond strength | Bond stability |
 
-### COX-2 Binding Site Pharmacophore
+### Binding Site Pharmacophore
 
-The binding score is calculated based on **COX-2 structural requirements** (PDB: 4PH9):
+The binding score is calculated based on **structural requirements**:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
