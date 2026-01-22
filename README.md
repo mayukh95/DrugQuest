@@ -677,37 +677,6 @@ jupyter notebook gat_multitask_binding.ipynb
 2. Explore attention patterns in the GAT Dashboard
 3. Analyze binding scores in the DrugQuest Dashboard
 
----
-
-## 📈 Results
-
-### Screening Pipeline Performance
-
-| Metric | Value |
-|--------|-------|
-| Initial Dataset | 185 molecules |
-| Lipinski Compliant | 166 (89.7%) |
-| Lead-like | 98 (53.0%) |
-| Top Consensus Hits | See notebook |
-
-### GAT Model Performance
-
-| Metric | Value |
-|--------|-------|
-| Training Molecules | 148 |
-| Validation Molecules | 37 |
-| Best Val Loss | ~0.15 |
-| Tasks | 6 (HBA, HBD, LogP, Aromatic, TPSA, Acid) |
-
-### Top COX-2 Candidates
-
-| Rank | Molecule | Binding Score |
-|------|----------|---------------|
-| 1 | Diclofenac | 0.968 |
-| 2 | Piroxicam | 0.945 |
-| 3 | Perindopril | 0.943 |
-| 4 | Ramipril | 0.933 |
-| 5 | Valsartan | 0.933 |
 
 ---
 
@@ -728,20 +697,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 📚 References
-
-1. Lipinski, C.A. et al. (1997). Experimental and computational approaches to estimate solubility and permeability in drug discovery and development settings. *Adv. Drug Deliv. Rev.*
-2. Veličković, P. et al. (2018). Graph Attention Networks. *ICLR 2018*
-3. Brody, S. et al. (2022). How Attentive are Graph Attention Networks? *ICLR 2022*
-4. Bickerton, G.R. et al. (2012). Quantifying the chemical beauty of drugs. *Nat. Chem.*
 
 ---
 
 ## 📧 Contact
 
-**Author**: Mayukh Sarkar
+**Author**: Mayukh Kansari
 
 ---
 
