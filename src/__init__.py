@@ -5,7 +5,7 @@ A comprehensive molecular analysis and DFT optimization package.
 
 This package provides tools for:
 - Molecular data handling and ADMET property prediction
-- Quantum chemistry DFT calculations and geometry optimization  
+- Quantum chemistry DFT calculations and geometry optimization
 - Interactive visualization and analysis widgets
 - Parallel optimization and resource management
 - Data import/export and utility functions
@@ -24,7 +24,7 @@ License: MIT
 """
 
 __version__ = "1.0.0"
-__author__ = "Mayukh"
+__author__ = "Mayukh Kansari"
 __license__ = "MIT"
 
 # Import main classes and functions
@@ -32,8 +32,8 @@ from .core import DrugMolecule, Config, ADMETPredictor
 from .quantum import EnhancedDFTCalculator, NewtonRaphsonOptimizer, MolecularOrbitalAnalyzer
 from .visualization import MolecularViewer3D, PropertyPlotter, TrajectoryPlotter
 from .interactive import (
-    InteractivePropertyFilter, 
-    DFTControlPanel, 
+    InteractivePropertyFilter,
+    DFTControlPanel,
     LiveProgressMonitor,
     LiveProgressTracker,
     InteractivePy3DmolViewer,
@@ -54,25 +54,25 @@ from .optimization import BatchOptimizer, ResourceManager
 from .utils import MoleculeLoader, FileExporter, calculate_molecular_descriptors
 
 __version__ = "0.1.0"
-__author__ = "Drug Discovery Pipeline Team"
-__email__ = "contact@drugdiscovery.ai"
+__author__ = "Mayukh Kansari"
+__email__ = "kansarimayukh@gmail.com"
 
 __all__ = [
     # Core classes
     'DrugMolecule',
-    'Config', 
+    'Config',
     'ADMETPredictor',
-    
+
     # Quantum chemistry
     'EnhancedDFTCalculator',
     'NewtonRaphsonOptimizer',
     'MolecularOrbitalAnalyzer',
-    
+
     # Visualization
     'MolecularViewer3D',
     'PropertyPlotter',
     'TrajectoryPlotter',
-    
+
     # Interactive widgets
     'InteractivePropertyFilter',
     'DFTControlPanel',
@@ -88,18 +88,18 @@ __all__ = [
     'load_xyz_trajectory',
     'analyze_trajectory',
     'plot_trajectory_analysis',
-    
+
     # Analysis tools
     'TrajectoryAnalyzer',
     'OrbitalVisualizer',
     'GeometryAnalyzer',
-    
+
     # Optimization
     'BatchOptimizer',
     'ResourceManager',
     'OptimizationTracker',
     'ParallelBatchOptimizer',
-    
+
     # Utilities
     'MoleculeLoader',
     'FileExporter',
@@ -116,7 +116,7 @@ def get_example_molecules():
         ("Ibuprofen", "15687-27-1", "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"),
         ("Penicillin", "61-33-6", "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C")
     ]
-    
+
     molecules = []
     for name, cas, smiles in examples:
         try:
@@ -124,7 +124,7 @@ def get_example_molecules():
             molecules.append(mol)
         except Exception as e:
             print(f"Warning: Could not create example molecule {name}: {e}")
-    
+
     return molecules
 
 
@@ -136,14 +136,14 @@ def create_default_config():
 def run_example_analysis():
     """Run a simple example analysis to test the package."""
     print("Running example drug discovery analysis...")
-    
+
     # Load example molecules
     molecules = get_example_molecules()
     print(f"Loaded {len(molecules)} example molecules")
-    
+
     # Calculate ADMET properties
     admet_predictor = ADMETPredictor()
-    
+
     print("\nADMET Analysis Results:")
     for mol in molecules:
         properties = admet_predictor.predict_properties(mol.mol)
@@ -153,11 +153,11 @@ def run_example_analysis():
                 print(f"  {prop}: {'PASS' if value else 'FAIL'}")
             elif isinstance(value, (int, float)):
                 print(f"  {prop}: {value:.2f}")
-    
+
     # Generate molecular descriptors
     descriptors_df = calculate_molecular_descriptors(molecules)
     print(f"\nCalculated {len(descriptors_df.columns)} molecular descriptors")
-    
+
     # Create visualization
     try:
         viewer = MolecularViewer3D()
@@ -165,7 +165,7 @@ def run_example_analysis():
         print("✓ 3D molecular visualization created successfully")
     except Exception as e:
         print(f"Visualization error: {e}")
-    
+
     print("\n✓ Example analysis completed successfully!")
     return molecules, descriptors_df
 
