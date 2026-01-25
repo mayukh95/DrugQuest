@@ -8,13 +8,14 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **A comprehensive computational drug Screening platform combining pharmacophore-based virtual screening with Graph Attention Networks**
+</div>
 
 This repository showcases an end-to-end drug discovery pipeline that integrates:
 - **Multi-metric molecular similarity** (Morgan, 2D/3D Pharmacophore)
 - **Deep Learning** with Graph Attention Networks (GAT)
 - **Interactive dashboards** for real-time analysis
 
-</div>
+
 ---
 
 ## 📑 Table of Contents
