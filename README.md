@@ -1,13 +1,19 @@
-# DrugQuest
 <div align="center">
-  <img src="assets/drugquest_logo.png" alt="DrugQuest Banner" width="100"/>
+
+<img src="assets/drugquest_logo.png" alt="DrugQuest Logo" width="200"/>
+
+# DrugQuest
+
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
 [![RDKit](https://img.shields.io/badge/RDKit-2023+-orange.svg)](https://rdkit.org)
 [![PyG](https://img.shields.io/badge/PyTorch_Geometric-2.0+-green.svg)](https://pytorch-geometric.readthedocs.io)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+<br/>
+
 **A comprehensive computational drug Screening platform combining pharmacophore-based virtual screening with Graph Attention Networks**
+
 </div>
 
 This repository showcases an end-to-end drug discovery pipeline that integrates:
