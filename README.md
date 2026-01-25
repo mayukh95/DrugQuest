@@ -1,5 +1,6 @@
 # DrugQuest
-
+<div align="center">
+  <img src="assets/drugquest_logo.png" alt="DrugQuest Banner" width="100"/>
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
 [![RDKit](https://img.shields.io/badge/RDKit-2023+-orange.svg)](https://rdkit.org)
@@ -13,6 +14,7 @@ This repository showcases an end-to-end drug discovery pipeline that integrates:
 - **Deep Learning** with Graph Attention Networks (GAT)
 - **Interactive dashboards** for real-time analysis
 
+</div>
 ---
 
 ## 📑 Table of Contents
