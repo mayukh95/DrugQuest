@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/drugquest_logo.png" alt="DrugQuest Logo" width="200"/>
+<img src="assets/drugquest_logo.png" alt="DrugQuest Logo" width="100"/>
 
 # DrugQuest
 
